@@ -26,10 +26,10 @@ public class Product {
     private int id;
 
     @Column(nullable = false)
-    private int name;
+    private String name;
 
     @Column(nullable = false)
-    private String node;
+    private int worthSale;
 
     @Column(nullable = false)
     private int worthUnitary;

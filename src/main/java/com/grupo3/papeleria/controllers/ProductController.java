@@ -37,7 +37,7 @@ public class ProductController {
         return new ResponseEntity<>(productService.readById(id), HttpStatus.OK);
     }
 
-    @PutMapping
+    @PutMapping(path = "{id}")
     public ResponseEntity<?> update(@RequestBody Product product) {
         return new ResponseEntity<>(productService.update(product), HttpStatus.OK);
     }
